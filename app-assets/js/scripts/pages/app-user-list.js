@@ -54,7 +54,7 @@ $(function () {
       columnDefs: [
         {
           // For Responsive
-          className: 'd-none',
+          visible: false,
           orderable: false,
           responsivePriority: 2,
           targets: 0,
@@ -102,7 +102,7 @@ $(function () {
         {
           // User Role
           targets: 2,
-          className: 'd-none',
+          visible: false,
           render: function (data, type, full, meta) {
             var $role = full['role'];
             var roleBadgeObj = {
@@ -217,6 +217,7 @@ $(function () {
           next: '&nbsp;'
         }
       },
+      pageLength: 6,
       initComplete: function () {
         // Adding role filter once table initialized
         this.api()

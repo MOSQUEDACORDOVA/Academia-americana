@@ -23,6 +23,9 @@
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/pickadate/pickadate.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -40,6 +43,8 @@
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/charts/chart-apex.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/pickers/form-pickadate.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -237,10 +242,171 @@
                 <!-- Dashboard Ecommerce Starts -->
                 <section id="dashboard-ecommerce">
                     
-                    <div class="row match-height">
+                    <div class="row match-height flex-md-row-reverse">
+
+                                                <!-- Statistics Card -->
+                        <div class="col-12 col-md-7">
+                            <div class="card ">
+                                <div class="card-header pb-md-0">
+                                     <h4 class="card-title">Crear grupo</h4>
+                                     <div class="heading-elements d-md-none">
+                                        <ul class="list-inline mb-0">
+                                            <li>
+                                                <a data-action="collapse"><i data-feather="chevron-down"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="card-header pt-1 font-small-2 d-none d-md-block">
+                                    Si presionas un item a la derecha tambien puedes editarlo acá. . .
+                                </p>
+
+                                <div class="card-content collapse show">
+                                    <div class="card-body">
+                                        <form class="form">
+                                            <div class="row custom-options-checkable g-1 mb-1">
+                                                <div class="col-md-6">
+                                                    <input class="custom-option-item-check" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios1" checked />
+                                                    <label class="custom-option-item p-1" for="customOptionsCheckableRadios1">
+                                                        <span class="d-flex justify-content-between flex-wrap mb-50">
+                                                            <span class="fw-bolder">Desde cero</span>
+                                                        </span>
+                                                        <small class="d-block">1 lección semanal.</small>
+                                                    </label>
+                                                </div>
+            
+                                                <div class="col-md-6">
+                                                    <input class="custom-option-item-check" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios2" value="" />
+                                                    <label class="custom-option-item p-1" for="customOptionsCheckableRadios2">
+                                                        <span class="d-flex justify-content-between flex-wrap mb-50">
+                                                            <span class="fw-bolder">Intensivo</span>
+                                                        </span>
+                                                        <small class="d-block">2 lecciones semanales.</small>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="mb-1">
+                                                        <label class="form-label" for="first-name-column">Niveles</label>
+                                                        <select class="form-select" name="fname-column" id="basicSelect">
+                                                            <option>Principiante</option>
+                                                            <option>Basico</option>
+                                                            <option>Intermedio</option>
+                                                            <option>Avanzado</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- button group checkbox -->
+                                            <div class="row mb-1">
+                                                <label class="form-label" for="first-name-column">Día</label>
+                                                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+
+                                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+                                                    <label class="btn btn-primary" for="btncheck1">
+                                                        D<span class="d-none d-md-inline">o</span>
+                                                    </label>
+        
+                                                    <input type="checkbox" class="btn-check" id="btncheck2" checked autocomplete="off" />
+                                                    <label class="btn btn-primary" for="btncheck2">
+                                                        L<span class="d-none d-md-inline">u</span>
+                                                    </label>
+        
+                                                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+                                                    <label class="btn btn-primary" for="btncheck3">
+                                                        M<span class="d-none d-md-inline">a</span>
+                                                    </label>
+        
+                                                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off" />
+                                                    <label class="btn btn-primary" for="btncheck4">
+                                                        <span class="d-none d-md-inline">M</span><span class="d-inline d-md-none">K</span><span class="d-none d-md-inline">i</span>
+                                                    </label>
+        
+                                                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off" />
+                                                    <label class="btn btn-primary" for="btncheck5">
+                                                        J<span class="d-none d-md-inline">u</span>
+                                                    </label>
+        
+                                                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off" />
+                                                    <label class="btn btn-primary" for="btncheck6">
+                                                        V<span class="d-none d-md-inline">i</span>
+                                                    </label>
+        
+                                                    <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off" />
+                                                    <label class="btn btn-primary" for="btncheck7">
+                                                        S<span class="d-none d-md-inline">a</span>
+                                                    </label>
+        
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-1">
+
+                                                <div class="col-6">
+                                                    <label class="form-label" for="fp-time">Hora inicio</label>
+                                                    <input type="text" id="fp-time" class="form-control flatpickr-time text-start" placeholder="HH:MM" />
+                                                </div>
+        
+                                                <div class="col-6">
+                                                    <label class="form-label" for="fp-time">Hora fin</label>
+                                                    <input type="text" id="fp-time2" class="form-control flatpickr-time text-start" placeholder="HH:MM" />
+                                                </div>    
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-md-6 mb-1">
+                                                    <label class="form-label" for="fp-default">Fecha inicio</label>
+                                                    <input type="text" id="fp-default" class="form-control flatpickr-basic" placeholder="YYYY-MM-DD" />
+                                                </div>
+        
+                                                <div class="col-md-6 mb-1">
+                                                    <label class="form-label" for="fp-default">Fecha fin</label>
+                                                    <input type="text" id="fp-default2" class="form-control flatpickr-basic" placeholder="YYYY-MM-DD" />
+                                                </div>
+
+                                            </div>
+                                            
+                                            <div class="row mb-1">
+                                                <!-- Basic -->
+                                                <div class="col-md-6 mb-1">
+                                                    <label class="form-label" for="select2-basic">Profesor</label>
+                                                    <select class="select2 form-select" id="select2-basic">
+                                                        <option value="OH">Pedro</option>
+                                                        <option value="PA">Jose</option>
+                                                        <option value="RI">Maria</option>
+                                                        <option value="SC">Juana</option>
+                                                        <option value="VT">Ramona</option>
+                                                    </select>
+                                                </div>
+                                                
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="numeral-formatting">Capacidad</label>
+                                                    <input type="text" class="form-control numeral-mask" placeholder="30" id="numeral-formatting" />
+                                                </div>
+        
+                                            </div>    
+            
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button type="reset" class="btn btn-primary me-1">Guardar</button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--/ Statistics Card -->
 
                         <!-- Basic Tabs starts -->
-                        <div class="col-xl-4 col-lg-12">
+                        <div class="col-12 col-md-5">
                             <div class="card">
                                 <div class="card-header">
                                     <h4 class="card-title">Grupos</h4>
@@ -282,19 +448,6 @@
                         </div>
                         <!-- Basic Tabs ends -->
 
-                        <!-- Statistics Card -->
-                        <div class="col-xl-8 col-md-6 col-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <div>
-                                      <h4 class="card-title">Crear grupo</h4>
-                                      <p class="card-text font-small-2">Si presionas un item a la derecha tambien puedes editarlo acá. . .</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--/ Statistics Card -->
                     </div>
 
 
@@ -343,6 +496,15 @@
     <script src="app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
     <script src="app-assets/vendors/js/forms/cleave/cleave.min.js"></script>
     <script src="app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="app-assets/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/cleave.min.js"></script>
+    <script src="app-assets/vendors/js/forms/cleave/addons/cleave-phone.us.js"></script>
+
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -354,6 +516,9 @@
     <script src="app-assets/js/scripts/components/components-navs.js"></script>
     <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
     <script src="app-assets/js/scripts/pages/app-user-list.js"></script>
+    <script src="app-assets/js/scripts/forms/pickers/form-pickers.js"></script>
+    <script src="app-assets/js/scripts/forms/form-number-input.js"></script>
+    <script src="app-assets/js/scripts/forms/form-input-mask.js"></script>
     <!-- END: Page JS-->
 
     <script>
