@@ -87,14 +87,35 @@ $(function () {
             var colorClass = $image === '' ? ' bg-light-' + $state + ' ' : '';
             // Creates full output for row
             var $row_output =
-              '<div class="d-flex justify-content-left align-items-center">' +
-              '<div class="avatar-wrapper">' +
-              
-              '</div>' +
-              '<div class="d-flex flex-column">' +
-              '<a href="#" class="user_name text-truncate text-body"><span class="fw-bolder">Fecha</span></a>' +
-              '<small class="emp_post text-muted">Alumnos inscritos</small>' +
-              '</div>' +
+              '<a href="#"><b>21101</b></a>' +
+              '<div>' +
+                '<div class="d-flex">' +
+
+                  '<div class="me-1">' +
+                    '<small class="emp_post text-muted">Alumnos</small><br>' +
+                    '<div class="d-flex">' +
+                      '<div class="badge rounded-pill badge-light-success me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Activos">10</div>' +
+                      '<div class="badge rounded-pill badge-light-danger me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Congelados">1</div>' +
+                      '<div class="badge rounded-pill badge-light-secondary me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Inscritos">11</div>' +
+                    '</div>' +
+                  '</div>' +
+
+                  '<div class="me-1">' +
+                    '<span class="item-calendar me-75">' +
+                    feather.icons['calendar'].toSvg({ class: 'font-small-4' }) +
+                    '</span>'+
+                    '<small class="emp_post text-muted">Inicio</small><br>' +
+                    '<small class="emp_post">22/01/2021</small>' +
+                  '</div>' +
+
+                  '<div class="">' +
+                    '<span class="item-calendar me-75">' +
+                    feather.icons['calendar'].toSvg({ class: 'font-small-4' }) +
+                    '</span>'+
+                    '<small class="emp_post text-muted">Fin</small><br>' +
+                    '<small class="emp_post">22/04/2021</small>' +
+                  '</div>' +
+                '</div>' +
               '</div>';
             return $row_output;
           }
@@ -217,14 +238,14 @@ $(function () {
           next: '&nbsp;'
         }
       },
-      pageLength: 6,
+      pageLength: 4,
       initComplete: function () {
         // Adding role filter once table initialized
         this.api()
           .columns(2)
           .every(function () {
             var column = this;
-            var label = $('<label class="form-label d-none" for="UserRole">Nivel</label>').appendTo('.user_role');
+            var label = "";
             var select = $(
               '<select id="UserRole" class="form-select text-capitalize mb-md-0 mb-2"><option value=""> Seleccionar Nivel </option></select>'
             )

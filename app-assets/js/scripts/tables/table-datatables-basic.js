@@ -39,11 +39,13 @@ $(function () {
           className: 'control',
           orderable: false,
           responsivePriority: 2,
-          targets: 0
+          targets: 0,
+          visible: false
         },
         {
           // For Checkboxes
           targets: 1,
+          visible: false,
           orderable: false,
           responsivePriority: 3,
           render: function (data, type, full, meta) {
@@ -113,8 +115,19 @@ $(function () {
           targets: 4
         },
         {
+          responsivePriority: 1,
+          targets: -4,
+          visible: false
+        },
+        {
+          responsivePriority: 1,
+          targets: -3,
+          visible: false
+        },
+        {
           // Label
           targets: -2,
+          visible: false,
           render: function (data, type, full, meta) {
             var $status_number = full['status'];
             var $status = {
@@ -139,7 +152,7 @@ $(function () {
         {
           // Actions
           targets: -1,
-          title: 'Actions',
+          title: 'Acciones',
           orderable: false,
           render: function (data, type, full, meta) {
             return (
@@ -150,13 +163,10 @@ $(function () {
               '<div class="dropdown-menu dropdown-menu-end">' +
               '<a href="javascript:;" class="dropdown-item">' +
               feather.icons['file-text'].toSvg({ class: 'font-small-4 me-50' }) +
-              'Details</a>' +
-              '<a href="javascript:;" class="dropdown-item">' +
-              feather.icons['archive'].toSvg({ class: 'font-small-4 me-50' }) +
-              'Archive</a>' +
+              'Ver</a>' +
               '<a href="javascript:;" class="dropdown-item delete-record">' +
               feather.icons['trash-2'].toSvg({ class: 'font-small-4 me-50' }) +
-              'Delete</a>' +
+              'Eliminar</a>' +
               '</div>' +
               '</div>' +
               '<a href="javascript:;" class="item-edit">' +
@@ -167,7 +177,7 @@ $(function () {
         }
       ],
       order: [[2, 'desc']],
-      dom: '<"card-header border-bottom p-1"<"head-label"><"dt-action-buttons text-end"B>><"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
+      dom: '<"card-header border-bottom p-1"<"head-label"><"d-none dt-action-buttons text-end"B>><"d-flex justify-content-between align-items-center mx-0 row"<"col-sm-12 col-md-6"l><"col-sm-12 col-md-6"f>>t<"d-flex justify-content-between mx-0 row"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
       displayLength: 7,
       lengthMenu: [7, 10, 25, 50, 75, 100],
       buttons: [
@@ -267,7 +277,7 @@ $(function () {
         }
       }
     });
-    $('div.head-label').html('<h6 class="mb-0">DataTable with Buttons</h6>');
+    $('div.head-label').html('<h6 class="mb-0">Alumnos inscritos</h6>');
   }
 
   // Flat Date picker
@@ -354,7 +364,7 @@ $(function () {
         {
           // Actions
           targets: -1,
-          title: 'Actions',
+          title: 'Acciones',
           orderable: false,
           render: function (data, type, full, meta) {
             return (
