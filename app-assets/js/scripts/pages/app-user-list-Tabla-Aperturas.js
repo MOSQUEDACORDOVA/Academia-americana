@@ -10,7 +10,7 @@
 $(function () {
   ('use strict');
 
-  var dtUserTable = $('.user-list-table'),
+  var dtUserTable = $('.user-list-table-Tabla-Aperturas'),
     newUserSidebar = $('.new-user-modal'),
     newUserForm = $('.add-new-user'),
     select = $('.select2'),
@@ -49,7 +49,7 @@ $(function () {
         // columns according to JSON
         { data: '' },
         { data: 'full_name' },
-        { data: 'role' }
+        { data: 'current_plan' }
       ],
       columnDefs: [
         {
@@ -87,17 +87,52 @@ $(function () {
             var colorClass = $image === '' ? ' bg-light-' + $state + ' ' : '';
             // Creates full output for row
             var $row_output =
-              '<a href="#"><b>21101</b></a>' +
               '<div>' +
+
+                '<div class="d-flex mb-1">' +
+
+                  '<div class="me-75">' +
+                    '<a href="#"><b>C21101-1</b></a>' +
+                  '</div>' +
+
+                  '<div>' +
+                    '<div class="d-flex">' +
+                      '<div class="badge rounded-pill badge-light-success me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Activos">10</div>' +
+                      '<div class="badge rounded-pill badge-light-info me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Incorporados">6</div>' +
+                      '<div style="color:#999 !important; background-color:#ff0;" class="badge rounded-pill badge-light-warning me-1" data-bs-toggle="tooltip" data-popup="tooltip-De otro grupo" data-bs-placement="top" data-bs-original-title="Inscritos">3</div>' +
+                      '<div class="badge rounded-pill badge-light-warning me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Fusionados">7</div>' +
+                      '<div class="badge rounded-pill badge-light-danger me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Congelados">1</div>' +
+                      '<div class="badge rounded-pill badge-light-secondary me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Total">11</div>' +
+
+                    '</div>' +
+                  '</div>' +
+
+                '</div>' +
+
                 '<div class="d-flex">' +
 
                   '<div class="me-1">' +
-                    '<small class="emp_post text-muted">Alumnos</small><br>' +
-                    '<div class="d-flex">' +
-                      '<div class="badge rounded-pill badge-light-success me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Activos">10</div>' +
-                      '<div class="badge rounded-pill badge-light-danger me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Congelados">1</div>' +
-                      '<div class="badge rounded-pill badge-light-secondary me-1" data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" data-bs-original-title="Inscritos">11</div>' +
-                    '</div>' +
+                    '<span class="item-user me-75">' +
+                    feather.icons['user'].toSvg({ class: 'font-small-4' }) +
+                    '</span>'+
+                    '<small class="emp_post text-muted">Prof.</small><br>' +
+                    '<small class="emp_post">Isaac M.</small>' +
+                  '</div>' +
+
+                  '<div class="me-1">' +
+                    '<span class="item-dollar-sign me-75">' +
+                    feather.icons['dollar-sign'].toSvg({ class: 'font-small-4' }) +
+                    '</span>'+
+                    '<small class="emp_post text-muted">Pagos</small><br>' +
+                    '<small class="emp_post">01 del mes</small>' +
+                  '</div>' +
+
+                  '<div class="me-1">' +
+                    '<span class="item-clock me-75">' +
+                    feather.icons['clock'].toSvg({ class: 'font-small-4' }) +
+                    '</span>'+
+                    '<small class="emp_post text-muted">Horario</small><br>' +
+                    '<small class="emp_post">Lunes: 6:30pm a 9pm</small>' +
                   '</div>' +
 
                   '<div class="me-1">' +
@@ -105,7 +140,7 @@ $(function () {
                     feather.icons['calendar'].toSvg({ class: 'font-small-4' }) +
                     '</span>'+
                     '<small class="emp_post text-muted">Inicio</small><br>' +
-                    '<small class="emp_post">22/01/2021</small>' +
+                    '<small class="emp_post">01/01/2021</small>' +
                   '</div>' +
 
                   '<div class="">' +
@@ -115,6 +150,7 @@ $(function () {
                     '<small class="emp_post text-muted">Fin</small><br>' +
                     '<small class="emp_post">22/04/2021</small>' +
                   '</div>' +
+                  
                 '</div>' +
               '</div>';
             return $row_output;
@@ -125,13 +161,12 @@ $(function () {
           targets: 2,
           visible: false,
           render: function (data, type, full, meta) {
-            var $role = full['role'];
+            var $role = full['current_plan'];
             var roleBadgeObj = {
-              Subscriber: feather.icons['user'].toSvg({ class: 'font-medium-3 text-primary me-50' }),
-              Author: feather.icons['settings'].toSvg({ class: 'font-medium-3 text-warning me-50' }),
-              Maintainer: feather.icons['database'].toSvg({ class: 'font-medium-3 text-success me-50' }),
-              Editor: feather.icons['edit-2'].toSvg({ class: 'font-medium-3 text-info me-50' }),
-              Admin: feather.icons['slack'].toSvg({ class: 'font-medium-3 text-danger me-50' })
+              Intensivo: feather.icons['user'].toSvg({ class: 'font-medium-3 text-primary me-50' }),
+              'Desde cero': feather.icons['settings'].toSvg({ class: 'font-medium-3 text-warning me-50' }),
+              Intermedio: feather.icons['database'].toSvg({ class: 'font-medium-3 text-success me-50' }),
+              Avanzado: feather.icons['slack'].toSvg({ class: 'font-medium-3 text-danger me-50' })
             };
             return "<span class='text-truncate align-middle'>" + roleBadgeObj[$role] + $role + '</span>';
           }
@@ -245,11 +280,11 @@ $(function () {
           .columns(2)
           .every(function () {
             var column = this;
-            var label = "";
+            var label = $('<label class="form-label" for="UserRole">Tipo de curso</label>').appendTo('.TipoCurso-grupos');
             var select = $(
-              '<select id="UserRole" class="form-select text-capitalize mb-md-0 mb-2"><option value=""> Todas </option></select>'
+              '<select id="UserRole" class="form-select text-capitalize mb-md-0 mb-2"><option value=""> Todos </option></select>'
             )
-              .appendTo('.user_role')
+              .appendTo('.TipoCurso-grupos')
               .on('change', function () {
                 var val = $.fn.dataTable.util.escapeRegex($(this).val());
                 column.search(val ? '^' + val + '$' : '', true, false).draw();
@@ -263,8 +298,7 @@ $(function () {
                 select.append('<option value="' + d + '" class="text-capitalize">' + d + '</option>');
               });
           });
-        
-        
+       
       }
     });
   }

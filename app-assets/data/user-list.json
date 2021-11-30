@@ -6,7 +6,7 @@
       "role": "Intermedio",
       "username": "gslixby0",
       "email": "gslixby0@abc.net.au",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Manual - Credit Card",
       "status": 3,
       "avatar": ""
@@ -17,7 +17,7 @@
       "role": "Principiante",
       "username": "hredmore1",
       "email": "hredmore1@imgur.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": "10.png"
@@ -28,7 +28,7 @@
       "role": "Principiante",
       "username": "msicely2",
       "email": "msicely2@who.int",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": "1.png"
@@ -39,7 +39,7 @@
       "role": "Principiante",
       "username": "crisby3",
       "email": "crisby3@wordpress.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Credit Card",
       "status": 3,
       "avatar": "9.png"
@@ -50,7 +50,7 @@
       "role": "Avanzado",
       "username": "mhurran4",
       "email": "mhurran4@yahoo.co.jp",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 1,
       "avatar": "10.png"
@@ -61,7 +61,7 @@
       "role": "Principiante",
       "username": "shalstead5",
       "email": "shalstead5@shinystat.com",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": ""
@@ -72,7 +72,7 @@
       "role": "Avanzado",
       "username": "bgallemore6",
       "email": "bgallemore6@boston.com",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": ""
@@ -83,7 +83,7 @@
       "role": "Principiante",
       "username": "kliger7",
       "email": "kliger7@vinaora.com",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 1,
       "avatar": "9.png"
@@ -94,7 +94,7 @@
       "role": "Avanzado",
       "username": "fscotfurth8",
       "email": "fscotfurth8@dailymotion.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Auto Debit",
       "status": 1,
       "avatar": "2.png"
@@ -105,7 +105,7 @@
       "role": "Principiante",
       "username": "jbellany9",
       "email": "jbellany9@kickstarter.com",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 3,
       "avatar": "9.png"
@@ -116,7 +116,7 @@
       "role": "Avanzado",
       "username": "jwharltona",
       "email": "jwharltona@oakley.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Paypal",
       "status": 3,
       "avatar": "4.png"
@@ -127,7 +127,7 @@
       "role": "Avanzado",
       "username": "shallamb",
       "email": "shallamb@hugedomains.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Credit Card",
       "status": 1,
       "avatar": "5.png"
@@ -138,7 +138,7 @@
       "role": "Avanzado",
       "username": "ypottiec",
       "email": "ypottiec@privacy.gov.au",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 3,
       "avatar": "7.png"
@@ -149,7 +149,7 @@
       "role": "Principiante",
       "username": "mkraused",
       "email": "mkraused@stanford.edu",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": "9.png"
@@ -160,7 +160,7 @@
       "role": "Principiante",
       "username": "zmcclevertye",
       "email": "zmcclevertye@soundcloud.com",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": "2.png"
@@ -171,7 +171,7 @@
       "role": "Principiante",
       "username": "bemblinf",
       "email": "bemblinf@wired.com",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": "6.png"
@@ -182,7 +182,7 @@
       "role": "Principiante",
       "username": "bmylesg",
       "email": "bmylesg@amazon.com",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Paypal",
       "status": 2,
       "avatar": ""
@@ -193,7 +193,7 @@
       "role": "Intermedio",
       "username": "bbinerh",
       "email": "bbinerh@mozilla.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Cash",
       "status": 2,
       "avatar": "7.png"
@@ -201,10 +201,10 @@
     {
       "id": 19,
       "full_name": "Travus Bruntjen",
-      "role": "Basico",
+      "role": "Básico",
       "username": "tbruntjeni",
       "email": "tbruntjeni@sitemeter.com",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 2,
       "avatar": ""
@@ -215,7 +215,7 @@
       "role": "Intermedio",
       "username": "wburlandj",
       "email": "wburlandj@uiuc.edu",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Auto Debit",
       "status": 3,
       "avatar": "6.png"
@@ -226,7 +226,7 @@
       "role": "Principiante",
       "username": "sdelamainek",
       "email": "sdelamainek@who.int",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 1,
       "avatar": "1.png"
@@ -237,7 +237,7 @@
       "role": "Intermedio",
       "username": "jlysterl",
       "email": "jlysterl@guardian.co.uk",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 3,
       "avatar": "8.png"
@@ -248,7 +248,7 @@
       "role": "Principiante",
       "username": "kskitterelm",
       "email": "kskitterelm@washingtonpost.com",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": "3.png"
@@ -256,10 +256,10 @@
     {
       "id": 24,
       "full_name": "Cleavland Hatherleigh",
-      "role": "Basico",
+      "role": "Básico",
       "username": "chatherleighn",
       "email": "chatherleighn@washington.edu",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": "2.png"
@@ -267,10 +267,10 @@
     {
       "id": 25,
       "full_name": "Adeline Micco",
-      "role": "Basico",
+      "role": "Básico",
       "username": "amiccoo",
       "email": "amiccoo@whitehouse.gov",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Manual - Credit Card",
       "status": 1,
       "avatar": ""
@@ -278,10 +278,10 @@
     {
       "id": 26,
       "full_name": "Hugh Hasson",
-      "role": "Basico",
+      "role": "Básico",
       "username": "hhassonp",
       "email": "hhassonp@bizjournals.com",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 3,
       "avatar": "4.png"
@@ -292,7 +292,7 @@
       "role": "Intermedio",
       "username": "gjacombsq",
       "email": "gjacombsq@jigsy.com",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 2,
       "avatar": "10.png"
@@ -303,7 +303,7 @@
       "role": "Principiante",
       "username": "bkildayr",
       "email": "bkildayr@mashable.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Credit Card",
       "status": 2,
       "avatar": ""
@@ -314,7 +314,7 @@
       "role": "Principiante",
       "username": "cpinyons",
       "email": "cpinyons@behance.net",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": "7.png"
@@ -325,7 +325,7 @@
       "role": "Avanzado",
       "username": "imallindinet",
       "email": "imallindinet@shinystat.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Credit Card",
       "status": 1,
       "avatar": ""
@@ -333,10 +333,10 @@
     {
       "id": 31,
       "full_name": "Gwendolyn Meineken",
-      "role": "Basico",
+      "role": "Básico",
       "username": "gmeinekenu",
       "email": "gmeinekenu@hc360.com",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 1,
       "avatar": "1.png"
@@ -347,7 +347,7 @@
       "role": "Intermedio",
       "username": "rsnowballv",
       "email": "rsnowballv@indiegogo.com",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": "5.png"
@@ -355,10 +355,10 @@
     {
       "id": 33,
       "full_name": "Rochette Emer",
-      "role": "Basico",
+      "role": "Básico",
       "username": "remerw",
       "email": "remerw@blogtalkradio.com",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": "8.png"
@@ -369,7 +369,7 @@
       "role": "Avanzado",
       "username": "ofibbensx",
       "email": "ofibbensx@booking.com",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 2,
       "avatar": "4.png"
@@ -380,7 +380,7 @@
       "role": "Principiante",
       "username": "smacgilfoyley",
       "email": "smacgilfoyley@bigcartel.com",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": ""
@@ -391,7 +391,7 @@
       "role": "Avanzado",
       "username": "brosebothamz",
       "email": "brosebothamz@tripadvisor.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Paypal",
       "status": 3,
       "avatar": ""
@@ -399,10 +399,10 @@
     {
       "id": 37,
       "full_name": "Skip Hebblethwaite",
-      "role": "Basico",
+      "role": "Básico",
       "username": "shebblethwaite10",
       "email": "shebblethwaite10@arizona.edu",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 3,
       "avatar": "9.png"
@@ -413,7 +413,7 @@
       "role": "Principiante",
       "username": "mpiccard11",
       "email": "mpiccard11@vimeo.com",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Manual - Credit Card",
       "status": 3,
       "avatar": "1.png"
@@ -424,7 +424,7 @@
       "role": "Avanzado",
       "username": "twidmore12",
       "email": "twidmore12@bravesites.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Cash",
       "status": 1,
       "avatar": ""
@@ -435,7 +435,7 @@
       "role": "Principiante",
       "username": "fdesporte13",
       "email": "fdesporte13@omniture.com",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Manual - Cash",
       "status": 2,
       "avatar": "6.png"
@@ -446,7 +446,7 @@
       "role": "Principiante",
       "username": "ebaldetti14",
       "email": "ebaldetti14@theguardian.com",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Credit Card",
       "status": 1,
       "avatar": ""
@@ -457,7 +457,7 @@
       "role": "Intermedio",
       "username": "brossiter15",
       "email": "brossiter15@craigslist.org",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Cash",
       "status": 3,
       "avatar": ""
@@ -465,10 +465,10 @@
     {
       "id": 43,
       "full_name": "Micaela McNirlan",
-      "role": "Basico",
+      "role": "Básico",
       "username": "mmcnirlan16",
       "email": "mmcnirlan16@hc360.com",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Credit Card",
       "status": 3,
       "avatar": ""
@@ -479,7 +479,7 @@
       "role": "Principiante",
       "username": "vkoschek17",
       "email": "vkoschek17@abc.net.au",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Paypal",
       "status": 2,
       "avatar": ""
@@ -490,7 +490,7 @@
       "role": "Avanzado",
       "username": "cperot18",
       "email": "cperot18@goo.ne.jp",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": "3.png"
@@ -501,7 +501,7 @@
       "role": "Principiante",
       "username": "soffner19",
       "email": "soffner19@mac.com",
-      "current_plan": "Enterprise",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 1,
       "avatar": ""
@@ -509,10 +509,10 @@
     {
       "id": 47,
       "full_name": "Karena Courtliff",
-      "role": "Basico",
+      "role": "Básico",
       "username": "kcourtliff1a",
       "email": "kcourtliff1a@bbc.co.uk",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Paypal",
       "status": 2,
       "avatar": "1.png"
@@ -520,10 +520,10 @@
     {
       "id": 48,
       "full_name": "Onfre Wind",
-      "role": "Basico",
+      "role": "Básico",
       "username": "owind1b",
       "email": "owind1b@yandex.ru",
-      "current_plan": "Basic",
+      "current_plan": "Intensivo",
       "billing": "Manual - Paypal",
       "status": 1,
       "avatar": ""
@@ -534,7 +534,7 @@
       "role": "Avanzado",
       "username": "pdurber1c",
       "email": "pdurber1c@gov.uk",
-      "current_plan": "Team",
+      "current_plan": "Desde cero",
       "billing": "Manual - Cash",
       "status": 3,
       "avatar": ""
@@ -545,7 +545,7 @@
       "role": "Intermedio",
       "username": "bkrabbe1d",
       "email": "bkrabbe1d@home.pl",
-      "current_plan": "Company",
+      "current_plan": "Intensivo",
       "billing": "Auto Debit",
       "status": 2,
       "avatar": "9.png"
