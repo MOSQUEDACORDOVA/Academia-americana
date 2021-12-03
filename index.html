@@ -197,7 +197,7 @@
                                         <form class="form">
                                             <div class="row custom-options-checkable g-1 mb-1">
                                                 <div class="col-md-6">
-                                                    <input class="custom-option-item-check" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios1" checked />
+                                                    <input class="custom-option-item-check desde0" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios1" checked />
                                                     <label class="custom-option-item p-1" for="customOptionsCheckableRadios1">
                                                         <span class="d-flex justify-content-between flex-wrap mb-50">
                                                             <span class="fw-bolder">Desde cero</span>
@@ -207,7 +207,7 @@
                                                 </div>
             
                                                 <div class="col-md-6">
-                                                    <input class="custom-option-item-check" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios2" value="" />
+                                                    <input class="custom-option-item-check intensivo" type="radio" name="customOptionsCheckableRadios" id="customOptionsCheckableRadios2" value="" />
                                                     <label class="custom-option-item p-1" for="customOptionsCheckableRadios2">
                                                         <span class="d-flex justify-content-between flex-wrap mb-50">
                                                             <span class="fw-bolder">Intensivo</span>
@@ -221,24 +221,27 @@
                                                 <div class="col-12">
                                                     <div class="mb-1">
                                                         <label class="form-label" for="first-name-column">Día y Horario</label>
-                                                        <select class="form-select" name="fname-column" id="basicSelect">
+                                                        <select class="form-select" name="" id="desde0select">
                                                             <option> Lunes: 6:30pm a 9pm</option>
                                                             <option> Martes: 6:30pm a 9pm</option>
                                                             <option> Miércoles: 6:30pm a 9pm</option>
                                                             <option> Jueves: 6:30pm a 9pm</option>
                                                             <option> Sábado: 8:30am a 11am</option>
                                                         </select>
+
+                                                        <select class="form-select d-none" name="" id="intensivoSelect">
+                                                            <option> Lunes y Míercoles: 6:30pm a 9pm</option>
+                                                            <option> Martes y Jueves: 6:30pm a 9pm</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="row">
-
                                                 <div class="col-12 mb-1">
                                                     <label class="form-label" for="fp-default">Fecha inicio</label>
                                                     <input type="text" id="fp-default" class="form-control flatpickr-basic" placeholder="YYYY-MM-DD" />
                                                 </div>
-        
                                             </div>
                                                                                                     
                                             <div class="row">
@@ -406,6 +409,33 @@
 
     <!-- END: Page JS-->
 
+    <script>
+        let inputDesde0 = document.querySelector('.desde0'),
+        desde0Select = document.getElementById('desde0select'),
+        inputIntensivo = document.querySelector('.intensivo'),
+        intensivoSelect = document.getElementById('intensivoSelect');
+
+        inputDesde0.addEventListener('change', () => {
+            Reset(1);
+        });
+        inputIntensivo.addEventListener('change', () => {
+            Reset(2);
+        });
+        
+        const Reset = (num) => {
+            if (num === 1) {
+                desde0Select.classList.remove('d-none')
+                desde0Select.classList.add('d-block')
+                intensivoSelect.classList.remove('d-block')
+                intensivoSelect.classList.add('d-none')
+            } else {
+                intensivoSelect.classList.remove('d-none')
+                intensivoSelect.classList.add('d-block')
+                desde0Select.classList.remove('d-block')
+                desde0Select.classList.add('d-none')
+            }
+        }
+    </script>
     <script>
         $(window).on('load', function() {
             if (feather) {
